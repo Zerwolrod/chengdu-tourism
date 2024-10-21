@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特色美食</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 毛玻璃效果的导航栏 -->
+    <header class="glass-header">
+        <div class="logo">Cheng Du</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于成都</a></li>
+                <li><a href="dujiang.html">都江堰</a></li>
+                <li><a href="jiuzhai.html">九寨沟</a></li>
+                <li><a href="xiongmao.html">熊猫基地</a></li>
+                <li><a href="foods.html">特色美食</a></li>
+                <li><a href="https://github.com/Zerwolrod">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主内容 -->
+    <main>
+        <section class="hero" style="text-align: center; padding: 4rem 2rem;">
+            <h1>特色美食</h1>
+            <p class="center-text">感受味蕾的享受，川菜文化的魅力。</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="images/9.jpg" alt="火锅">
+                <h2>火锅</h2>
+                <p>麻辣鲜香，边煮边吃</p>
+            </div>
+            <div class="feature">
+                <img src="images/10.jpg" alt="麻婆豆腐">
+                <h2>麻婆豆腐</h2>
+                <p>麻辣鲜香，豆腐嫩滑</p>
+            </div>
+            <div class="feature">
+                <img src="images/11.jpg" alt="串串香">
+                <h2>串串香</h2>
+                <p>食材多样，麻辣可口</p>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <img src="images/12.jpg" alt="担担面">
+                <h2>担担面</h2>
+                <p>麻辣面食，风味独特</p>
+            </div>
+            <div class="feature">
+                <img src="images/13.jpg" alt="龙抄手">
+                <h2>龙抄手</h2>
+                <p>皮薄馅嫩，汤鲜味美</p>
+            </div>
+            <div class="feature">
+                <img src="images/14.jpg" alt="夫妻肺片">
+                <h2>夫妻肺片</h2>
+                <p>牛肉牛杂，麻辣软嫩</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; background-color: #333; color: #fff;">
+        <p>© 2024 袁宇琛熊猫保护基地 版权所有.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const heroSection = document.querySelector('.hero');
+            heroSection.style.backgroundImage = "url('images/9.jpg')";
+            heroSection.style.backgroundSize = "cover";
+            heroSection.style.backgroundPosition = "center";
+            heroSection.style.color = "#fff";
+        });
+    </script>
+
+</body>
+</html>

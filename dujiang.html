@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>都江堰</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 毛玻璃效果的导航栏 -->
+    <header class="glass-header">
+        <div class="logo">Cheng Du</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于成都</a></li>
+                <li><a href="dujiang.html">都江堰</a></li>
+                <li><a href="jiuzhai.html">九寨沟</a></li>
+                <li><a href="xiongmao.html">熊猫基地</a></li>
+                <li><a href="foods.html">特色美食</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主内容 -->
+    <main>
+        <section class="hero">
+            <h1>都江堰</h1>
+            <p class="center-text">古代水利工程奇迹，至今仍造福成都平原</p>
+        </section>
+
+        <section class="title-1">
+            <h2>工程奇迹</h2>  
+        </section>
+
+        <section class="content-section">
+            <img src="images/19.jpg" alt="都江堰水利工程">
+            <p class="center-text">
+                都江堰位于成都西北部的岷江上，建于公元前256年，是世界上迄今为止最古老且仍在使用的水利工程。它不仅解决了洪水问题，还促进了农业灌溉，成为成都“天府之国”的基础。
+            </p>
+            <p class="center-text">
+                作为古代工程的杰作，都江堰反映了中国古代劳动人民的智慧与技术实力，历经两千多年，依然完美发挥作用。
+            </p>
+        </section>
+
+        <section class="title-1">
+            <h2>旅游景点</h2>  
+        </section>
+        
+        <section class="content-section">
+            <img src="images/20.jpg" alt="都江堰风景区">
+            <p class="center-text">
+                如今的都江堰风景区不仅是水利工程的展示地，也是游客观光、学习和感悟中国古代工程技术的热门景点。区域内还有青城山等历史文化景观，供游客深度探索。
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 袁宇琛熊猫保护基地 版权所有.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const heroSection = document.querySelector('.hero');
+            heroSection.style.backgroundImage = "url('images/6.jpg')";
+            heroSection.style.backgroundSize = "cover";
+            heroSection.style.backgroundPosition = "center";
+            heroSection.style.color = "#fff";
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成都旅游</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 毛玻璃效果的导航栏 -->
+    <header class="glass-header">
+        <div class="logo">
+            Cheng Du
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于成都</a></li>
+                <li><a href="dujiang.html">都江堰</a></li>
+                <li><a href="jiuzhai.html">九寨沟</a></li>
+                <li><a href="xiongmao.html">熊猫基地</a></li>
+                <li><a href="foods.html">特色美食</a></li>
+                <li><a href="https://github.com/Zerwolrod">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero 部分 -->
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="/images/1.mp4" type="video/mp4">
+                    <!-- 浏览器不支持video标签时显示的图片 -->
+                    <img src="images/0.jpg" alt="视频无法播放">
+                </video>
+            </div>
+            <h1 class="typewriter" id="hero-title"></h1>    
+            <p class="typewriter" id="hero-text"></p>
+            <a href="about.html" class="cta-button">了解更多</a>
+        </section>
+
+        <section class="title-1">
+            <h1>旅游景点</h1>  
+            <p class="typewriter" id="title-1"></p>
+        </section>
+
+        <section class="hero-1">
+            <h1>都江堰</h1>    
+            <p>体验古老的水利奇迹，探索大自然与人类智慧的完美结合，感受千年历史的厚重</p>
+            <a href="jiuzhai.html" class="cta-button">了解更多</a> <!-- 修改这里 -->
+        </section>
+        
+        <section class="hero-2">
+            <h1>九寨沟</h1>    
+            <p>沉醉于九寨沟的五彩湖水与瀑布，领略大自然的鬼斧神工，仿佛置身于人间仙境</p>
+            <a href="jiuzhai.html" class="cta-button">了解更多</a> <!-- 修改这里 -->
+        </section>
+        
+        <section class="hero-3">
+            <h1>熊猫基地</h1>    
+            <p>与国宝熊猫亲密接触，了解它们的生活习性，共同保护熊猫宝宝</p>
+            <a href="xiongmao.html" class="cta-button">了解更多</a> <!-- 修改这里 -->
+        </section>        
+
+        <section class="title-1">
+            <h1>特色美食</h1>  
+            <p class="typewriter" id="title-2"></p>
+        </section>
+
+        
+        <section class="features">
+            <div class="feature">
+                <img src="images/9.jpg" alt="火锅">
+                <h2>火锅</h2>
+                <p>麻辣鲜香，边煮边吃</p>
+            </div>
+            <div class="feature">
+                <img src="images/10.jpg" alt="麻婆豆腐">
+                <h2>麻婆豆腐</h2>
+                <p>麻辣鲜香，豆腐嫩滑</p>
+            </div>
+            <div class="feature">
+                <img src="images/11.jpg" alt="串串香">
+                <h2>串串香</h2>
+                <p>食材多样，麻辣可口</p>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <img src="images/12.jpg" alt="担担面">
+                <h2>担担面</h2>
+                <p>麻辣面食，风味独特</p>
+            </div>
+            <div class="feature">
+                <img src="images/13.jpg" alt="龙抄手">
+                <h2>龙抄手</h2>
+                <p>皮薄馅嫩，汤鲜味美</p>
+            </div>
+            <div class="feature">
+                <img src="images/14.jpg" alt="夫妻肺片">
+                <h2>夫妻肺片</h2>
+                <p>牛肉牛杂，麻辣软嫩</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 袁宇琛熊猫保护基地 版权所有.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function typeWriter(text, element, speed) {
+                let index = 0;
+                function type() {
+                    if (index < text.length) {
+                        element.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, speed);
+                    }
+                }
+                type();
+            }
+
+            const heroTitle = document.getElementById("hero-title");
+            const heroDescription = document.getElementById("hero-text");
+            const TitleP = document.getElementById("title-1");
+            const Titlep = document.getElementById("title-2");
+
+            typeWriter("欢迎来到成都", heroTitle, 100);
+            typeWriter("发现古老文化与现代都市的完美融合", heroDescription, 100);
+            typeWriter("探寻千年古都成都,开启自然与文化交融的极致旅程", TitleP, 100);
+            typeWriter("探寻舌尖上的文化，体验成都美食的独特魅力", Titlep, 100);
+
+        });
+    </script>
+</body>
+</html>
